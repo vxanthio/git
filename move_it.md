@@ -75,8 +75,7 @@ After completing the task, the repository structure is:
 |----------|----------|
 | `mkdir lib` | Create the lib directory |
 | `git mv work/hello/hello.sh lib/hello.sh` | Move hello.sh into lib while preserving history |
-| `git commit -m "refactor: move hello.sh to lib directory"` | Commit the file relocation |
 | `touch Makefile` | Create an empty Makefile in the root directory |
 | `git add Makefile` | Stage the Makefile |
-| `git commit -m "build: add Makefile for hello script"` | Commit the Makefile addition |
 | `make run` | Execute the script using the Makefile target |
+
