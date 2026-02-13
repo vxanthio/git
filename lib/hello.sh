@@ -1,5 +1,10 @@
 #!/bin/bash
-# Default is "World"
-# Author: Jim Weirich <jim@example.com>
-name=${1:-"World"}
-echo "Hello, $name"
+
+source lib/greeter.sh
+
+name="$1"
+if [ -z "$name" ]; then
+    name="World"
+fi
+
+Greeter "$name"
